@@ -1,0 +1,192 @@
+[
+  {
+    "package": "com.android.settings",
+    "category": "system",
+    "oem": "android",
+    "preinstalled": true,
+    "replacement": null,
+    "recommendation": "critical",
+    "confidence": "high",
+    "reason": "Core system settings app required for device configuration and system UI.",
+    "notes": [
+      "Generally not safe to disable",
+      "May break Settings and system management flows"
+    ]
+  },
+  {
+    "package": "com.android.systemui",
+    "category": "system",
+    "oem": "android",
+    "preinstalled": true,
+    "replacement": null,
+    "recommendation": "critical",
+    "confidence": "high",
+    "reason": "Critical system UI component that provides the status bar and navigation surface.",
+    "notes": [
+      "Essential for the Android user interface",
+      "Disabling can render the device unusable"
+    ]
+  },
+  {
+    "package": "com.google.android.gms",
+    "category": "services",
+    "oem": "google",
+    "preinstalled": true,
+    "replacement": null,
+    "recommendation": "critical",
+    "confidence": "high",
+    "reason": "Google Play Services is foundational for many Google and Android services.",
+    "notes": [
+      "Widely used by Google apps and system features",
+      "Disabling may break authentication and updates"
+    ]
+  },
+  {
+    "package": "com.google.android.gsf",
+    "category": "services",
+    "oem": "google",
+    "preinstalled": true,
+    "replacement": null,
+    "recommendation": "critical",
+    "confidence": "high",
+    "reason": "Google Services Framework is part of the Google account and sync infrastructure.",
+    "notes": [
+      "Important for account and sync operations"
+    ]
+  },
+  {
+    "package": "com.vivo.browser",
+    "category": "browser",
+    "oem": "vivo",
+    "preinstalled": true,
+    "replacement": "com.android.chrome",
+    "recommendation": "safe",
+    "confidence": "medium",
+    "reason": "OEM browser is often optional if an alternative browser is available.",
+    "notes": [
+      "May be safe to disable on devices with another browser installed",
+      "User preference may vary"
+    ]
+  },
+  {
+    "package": "com.vivo.appstore",
+    "category": "store",
+    "oem": "vivo",
+    "preinstalled": true,
+    "replacement": "com.android.vending",
+    "recommendation": "safe",
+    "confidence": "medium",
+    "reason": "OEM app store is usually optional if Google Play is present.",
+    "notes": [
+      "Often replaceable by Play Store",
+      "Some devices may rely on it for updates"
+    ]
+  },
+  {
+    "package": "com.vivo.easyshare",
+    "category": "sharing",
+    "oem": "vivo",
+    "preinstalled": true,
+    "replacement": null,
+    "recommendation": "safe",
+    "confidence": "medium",
+    "reason": "EasyShare is an OEM convenience feature and is often optional.",
+    "notes": [
+      "May be safe to disable if the user does not use it"
+    ]
+  },
+  {
+    "package": "com.vivo.themestore",
+    "category": "themes",
+    "oem": "vivo",
+    "preinstalled": true,
+    "replacement": null,
+    "recommendation": "safe",
+    "confidence": "medium",
+    "reason": "Themes store is optional and not required for core system operation.",
+    "notes": [
+      "UI customization feature",
+      "Disabling should mostly affect theme management"
+    ]
+  },
+  {
+    "package": "com.vivo.notes",
+    "category": "tools",
+    "oem": "vivo",
+    "preinstalled": true,
+    "replacement": null,
+    "recommendation": "safe",
+    "confidence": "medium",
+    "reason": "Notes is a user-facing productivity app and is usually optional.",
+    "notes": [
+      "Often safe to disable if the user has another notes app"
+    ]
+  },
+  {
+    "package": "com.vivo.calculator",
+    "category": "tools",
+    "oem": "vivo",
+    "preinstalled": true,
+    "replacement": null,
+    "recommendation": "safe",
+    "confidence": "medium",
+    "reason": "Calculator is a simple utility app and is generally not essential.",
+    "notes": [
+      "Safe to disable if the user has a replacement calculator app"
+    ]
+  },
+  {
+    "package": "com.vivo.clock",
+    "category": "tools",
+    "oem": "vivo",
+    "preinstalled": true,
+    "replacement": null,
+    "recommendation": "safe",
+    "confidence": "medium",
+    "reason": "Clock is usually optional unless the device depends on it for alarms or timers.",
+    "notes": [
+      "May affect alarm-related behavior",
+      "User replacement may be needed"
+    ]
+  },
+  {
+    "package": "com.android.chrome",
+    "category": "browser",
+    "oem": "google",
+    "preinstalled": false,
+    "replacement": null,
+    "recommendation": "safe",
+    "confidence": "medium",
+    "reason": "Chrome is a user app and generally safe to disable if another browser is preferred.",
+    "notes": [
+      "Typically user-installed or optional",
+      "May be disabled without affecting core system services"
+    ]
+  },
+  {
+    "package": "com.android.vending",
+    "category": "store",
+    "oem": "google",
+    "preinstalled": false,
+    "replacement": null,
+    "recommendation": "safe",
+    "confidence": "medium",
+    "reason": "Google Play Store is typically optional for user-installed app management.",
+    "notes": [
+      "Safe to disable if the user does not rely on it"
+    ]
+  },
+  {
+    "package": "com.android.dialer",
+    "category": "phone",
+    "oem": "android",
+    "preinstalled": true,
+    "replacement": null,
+    "recommendation": "critical",
+    "confidence": "medium",
+    "reason": "Dialer is part of core phone functionality and may be required by telephony features.",
+    "notes": [
+      "Disabling can affect calling and telephony-related workflows"
+    ]
+  }
+]

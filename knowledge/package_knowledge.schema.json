@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Package Knowledge Database",
+  "type": "array",
+  "description": "Structured knowledge about Android packages for debloat and package intelligence workflows.",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "package",
+      "category",
+      "oem",
+      "preinstalled",
+      "replacement",
+      "recommendation",
+      "confidence",
+      "reason",
+      "notes"
+    ],
+    "properties": {
+      "package": {
+        "type": "string",
+        "description": "Package name"
+      },
+      "category": {
+        "type": "string",
+        "description": "High-level package category such as system, ui, app, messaging, tools, browser, store"
+      },
+      "oem": {
+        "type": "string",
+        "description": "Vendor or manufacturer identifier, such as android, google, vivo, samsung"
+      },
+      "preinstalled": {
+        "type": "boolean",
+        "description": "Whether the package is commonly preinstalled or factory-installed"
+      },
+      "replacement": {
+        "type": ["string", "null"],
+        "description": "Suggested replacement package, if any"
+      },
+      "recommendation": {
+        "type": "string",
+        "enum": ["safe", "review", "critical", "unknown"],
+        "description": "The recommended debloat bucket for the package"
+      },
+      "confidence": {
+        "type": "string",
+        "enum": ["low", "medium", "high"],
+        "description": "Confidence level for the knowledge entry"
+      },
+      "reason": {
+        "type": "string",
+        "description": "Short explanation of why the package is classified this way"
+      },
+      "notes": {
+        "type": "array",
+        "description": "Additional context notes",
+        "items": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
