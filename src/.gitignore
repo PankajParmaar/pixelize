@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+
+# IDE
+.vscode/
+
+# macOS
+.DS_Store
+
+# Reports (generated)
+reports/*
+!reports/.gitkeep
