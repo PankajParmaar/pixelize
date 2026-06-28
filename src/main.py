@@ -2,6 +2,7 @@ from analyzer import analyze_packages
 from classifier import classify_package
 from packages import get_installed_packages
 from scanner import get_device_info
+from search import search_packages
 
 
 def main():
@@ -28,6 +29,14 @@ def main():
     analysis = analyze_packages(packages)
     for category in sorted(analysis):
         print(f"{category}: {analysis[category]}")
+    print()
+    keyword = input("Search packages (leave blank to skip): ")
+    if keyword:
+        print()
+        print("Search Results")
+        print("-" * 14)
+        for package in search_packages(packages, keyword):
+            print(package)
     print()
     print("Installed Package List")
     print("-" * 22)
